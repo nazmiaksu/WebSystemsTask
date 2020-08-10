@@ -1,0 +1,23 @@
+﻿@model IEnumerable<_1920543nazmi.Models.Slider>
+
+<section>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            @foreach (var item in Model)
+            {
+                <div class="swiper-slide"><img src="@item.SliderWay"> </div>
+            }
+
+ 
+   
+
+
+
+
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+</section>

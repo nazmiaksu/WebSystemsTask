@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=H, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/contactus.css">
+
+    <title>History</title>
+</head>
+
+<body>
+    <!--Sıralı olmayan liste-->
+    <ul class="menu1">
+        <li><a style="margin:0px;" href="index.html"><img width="30px" height="30px" src="img/logo.png" alt=""></a></li>
+        <li><a href="cappadocia.html" class="">Cappadocia</a></li>
+        <li><a href="history.html" class="">History</a></li>
+        <li><a href="tourist.html" class="">Tourist Attraction</a></li>
+        <li><a href="https://www.evisa.gov.tr/en/" class="">Apply for e-Visa</a></li>
+        <li><a href="contactus.html" class="">ContactUs</a></li>
+    </ul>
+
+    <div class="container">
+        <div>
+
+            <div style="text-align:center">
+                <h2>Contact Us</h2>
+
+            </div>
+        </div>
+        <div class="row colorb">
+            <div class="column">
+                <p> <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9543.55739798665!2d-2.8268218!3d53.2736022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaec03cfffd4267b9!2sUniversity%20of%20Chester%2C%20Thornton%20Science%20Park!5e0!3m2!1sen!2suk!4v1586308433588!5m2!1sen!2suk"
+                        width="650" height="500" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0"></iframe>
+                </p>
+            </div>
+            <!--Shift+Alt+F-->
+            <!--Ctrl+Shift+Z,A-->
+            <!--Ctrl+P-->
+            <div class="column">
+                <form>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your Name">
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lasttname" placeholder="Last Name">
+
+                    
+                    <label for="Email">E-mail</label>
+                    <input type="text" id="E-mail" name="e-mail" placeholder="example@mail.com">
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country">
+                        <option value="usa">United Kingdom</option>
+                        <option value="usa">Australia</option>
+                        <option value="usa">Canada</option>
+                        <option value="usa">Usa</option>
+                    
+
+                    </select>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Leave us a message.."
+                        style="height:170px"></textarea>
+                    <input onclick="myFunction()" type="submit" value="Submit">
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function myFunction() {
+            alert("Message sent successful!");
+        }
+    </script>
+
+</body>
+
+</html>

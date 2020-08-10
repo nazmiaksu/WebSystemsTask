@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="nazmidbModelStoreContainer" CdmEntityContainer="nazmidbEntities">
+    <EntitySetMapping Name="CappadociaContents">
+      <EntityTypeMapping TypeName="nazmidbModel.CappadociaContent">
+        <MappingFragment StoreEntitySet="CappadociaContent">
+          <ScalarProperty Name="ContID" ColumnName="ContID" />
+          <ScalarProperty Name="ContTitle1" ColumnName="ContTitle1" />
+          <ScalarProperty Name="ContDetail1" ColumnName="ContDetail1" />
+          <ScalarProperty Name="ContTitle2" ColumnName="ContTitle2" />
+          <ScalarProperty Name="ContDetail2" ColumnName="ContDetail2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pictures">
+      <EntityTypeMapping TypeName="nazmidbModel.Picture">
+        <MappingFragment StoreEntitySet="Picture">
+          <ScalarProperty Name="PictureWay" ColumnName="PictureWay" />
+          <ScalarProperty Name="PicID" ColumnName="PicID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sliders">
+      <EntityTypeMapping TypeName="nazmidbModel.Slider">
+        <MappingFragment StoreEntitySet="Slider">
+          <ScalarProperty Name="SliderWay" ColumnName="SliderWay" />
+          <ScalarProperty Name="SliID" ColumnName="SliID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

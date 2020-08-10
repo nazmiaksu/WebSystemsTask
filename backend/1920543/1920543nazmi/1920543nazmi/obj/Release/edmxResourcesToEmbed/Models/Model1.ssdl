@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="nazmidbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="CappadociaContent">
+    <Key>
+      <PropertyRef Name="ContID" />
+    </Key>
+    <Property Name="ContID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContTitle1" Type="varchar(max)" />
+    <Property Name="ContDetail1" Type="varchar(max)" />
+    <Property Name="ContTitle2" Type="varchar(max)" />
+    <Property Name="ContDetail2" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Picture">
+    <Key>
+      <PropertyRef Name="PicID" />
+    </Key>
+    <Property Name="PicID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PictureWay" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Slider">
+    <Key>
+      <PropertyRef Name="SliID" />
+    </Key>
+    <Property Name="SliID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SliderWay" Type="varchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="nazmidbModelStoreContainer">
+    <EntitySet Name="CappadociaContent" EntityType="Self.CappadociaContent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Picture" EntityType="Self.Picture" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Slider" EntityType="Self.Slider" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

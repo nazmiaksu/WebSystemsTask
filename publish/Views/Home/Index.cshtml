@@ -1,0 +1,135 @@
+﻿
+
+@{
+    Layout = null;
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazmiwebsite</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/css/slidercss/swiper.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/slidercss/slider.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,669;0,700;0,800;0,900;1,400;1,500;1,600;1,669;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="~/Content/css/all.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+
+        <!--Menu-->
+
+        <ul class="menu1">
+            <li><a style="margin:0px;" href="/Home/Index"><img width="30px;" height="30px;" src="~/Content/img/logo.png" alt=""></a></li>
+            <li><a href="/Home/Cappadocia" class="">Cappadocia</a></li>
+            <li><a href="/Home/History" class="">History</a></li>
+            <li><a href="/Home/TouristAttraction" class="">Tourist Attraction</a></li>
+            <li><a href="https://www.evisa.gov.tr/en/" class="">Apply for e-Visa</a></li>
+            <li><a href="/Home/ContactUs" class="">Contact Us</a></li>
+        </ul>
+
+    </header>
+
+    @*----------SERVER SIDE-----------*@
+
+    @*Slider Data(Database MSSQL)*@
+
+    @Html.Action("Slider", "Partial")
+
+
+    @*Content Data(Database MSSQL)*@
+    @Html.Action("ContentText", "Partial")
+
+
+    @*Picture Data(Database MSSQL)*@
+    @Html.Action("Picture", "Partial")
+
+    @*Content Data 2*@
+    @Html.Action("ContentText2", "Partial")
+
+
+    @*----------SERVER SIDE END-----------*@
+
+
+
+
+
+
+
+
+    <footer>
+
+        <div class="footer mt-50">
+
+            <ul>
+
+                <li><a href="index.html"><img src="~/Content/img/logo.png" /></a></li>
+
+
+                <li>
+                    Social Media
+                    <ul>
+                        <li><i class="fab fa-facebook-square fa-2x"></i></li>
+                        <li><i class="fab fa-twitter-square fa-2x"></i></li>
+                        <li><i class="fab fa-instagram fa-2x"></i></li>
+                        <li><i class="fab fa-youtube fa-2x"></i></li>
+                    </ul>
+                </li>
+
+                <li>
+                    Contact Us<ul>
+                        <p class="footer_font">
+                            Thornton Science Park,
+                            Pool Ln,
+                            Chester
+                            CH2 4NU,
+                            Chester
+                        </p>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+        </div>
+
+
+        </div>
+
+    </footer>
+
+    <!--<h1>index page</h1>
+
+    <!--CDN start-->
+    <script src="~/Content/js/jquery-3.4.1.min.js"></script>
+    <script src="~/Content/js/sliderjs/swiper.js"></script>
+    <script src="~/Content/js/lightbox.js"></script>
+    <script src="~/Content/js/all.js"></script>
+    <!--CDN end-->
+
+    <script src="~/Content/js/script.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                delay: 5000,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+
+    </script>
+</body>
+
+</html>
